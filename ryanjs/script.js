@@ -7,7 +7,7 @@ checkBtn = document.querySelector(".check-word");
 
 let correctWord, timer;
 
-const initTimer = maxTime => {
+const initTimer = maxTime => {  // function for recurring timer
     clearInterval(timer);
     timer = setInterval(() => {
         if(maxTime > 0) {
@@ -39,7 +39,7 @@ const checkWord = () => {   //check if correct word
     let userWord = inputField.value.toLowerCase();
     if(!userWord) return alert("Please enter the word to check!");  // no word response
     if(userWord !== correctWord) return alert(`Oops! ${userWord} is not a correct word`); // incorrect word response
-    alert(`Congrats! ${correctWord.toUpperCase()} is the correct word`);  // correct word response
+    alert(`Congrats! ${correctWord.toUpperCase()} is the correct word`);  // {else} correct word response
     initGame();
 }
 

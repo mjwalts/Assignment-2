@@ -1,4 +1,4 @@
-/*word&hint library*/
+/*aggie word&hint library*/
 let words = [
     {
         word: "redass",
