@@ -25,7 +25,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: lightblue;
+    background-color: #500000;
   }
   
   h1 {
@@ -35,7 +35,7 @@
   
   .container {
     text-align: center;
-    background-color: rgb(36, 150, 243);
+    background-color: rgb(255, 255, 255);
     border-radius: 50px;
     padding: 5vw;
     width: 90vw;
