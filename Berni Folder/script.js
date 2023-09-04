@@ -1,4 +1,4 @@
-const cards = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D'];
+const cards = ['A&M', 'A&M', 'Rev', 'Rev', 'Ring', 'Ring', 'Horns Down', 'Horns Down'];
 let cardElements = [];
 let flippedCards = [];
 let matchedPairs = 0;
