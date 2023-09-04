@@ -21,25 +21,25 @@ const initTimer = maxTime => {
 
 const initGame = () => {
     initTimer(30);
-    let randomObj = words[Math.floor(Math.random() * words.length)];
-    let wordArray = randomObj.word.split("");
-    for (let i = wordArray.length - 1; i > 0; i--) {
+    let randomObj = words[Math.floor(Math.random() * words.length)]; //calls random word from words.js
+    let wordArray = randomObj.word.split("");   // splits word into array
+    for (let i = wordArray.length - 1; i > 0; i--) {  // randomizes letter order
         let j = Math.floor(Math.random() * (i + 1));
         [wordArray[i], wordArray[j]] = [wordArray[j], wordArray[i]];
     }
-    wordText.innerText = wordArray.join("");
-    hintText.innerText = randomObj.hint;
-    correctWord = randomObj.word.toLowerCase();;
+    wordText.innerText = wordArray.join(""); //combines word
+    hintText.innerText = randomObj.hint;  // pulls hint from chosen word
+    correctWord = randomObj.word.toLowerCase();;  
     inputField.value = "";
     inputField.setAttribute("maxlength", correctWord.length);
 }
 initGame();
 
-const checkWord = () => {
+const checkWord = () => {   //check if correct word
     let userWord = inputField.value.toLowerCase();
-    if(!userWord) return alert("Please enter the word to check!");
-    if(userWord !== correctWord) return alert(`Oops! ${userWord} is not a correct word`);
-    alert(`Congrats! ${correctWord.toUpperCase()} is the correct word`);
+    if(!userWord) return alert("Please enter the word to check!");  // no word response
+    if(userWord !== correctWord) return alert(`Oops! ${userWord} is not a correct word`); // incorrect word response
+    alert(`Congrats! ${correctWord.toUpperCase()} is the correct word`);  // correct word response
     initGame();
 }
 
