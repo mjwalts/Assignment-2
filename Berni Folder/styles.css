@@ -13,8 +13,8 @@
   
   .card {
     width: 20%;
-    padding-top: 20%; /* maintain aspect ratio */
-    position: relative; /* for inner content positioning */
+    padding-top: 20%; /*  aspect ratio */
+    position: relative; 
     border: 1px solid #000;
     display: flex;
     justify-content: center;
@@ -48,7 +48,7 @@
     max-width: 600px;
   }
   
-  /* Example Media Query */
+  
   @media only screen and (max-width: 600px) {
     #game-board {
       width: 90vw;

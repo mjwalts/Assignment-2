@@ -3,12 +3,12 @@ let cardElements = [];
 let flippedCards = [];
 let matchedPairs = 0;
 
-// Shuffle array function
+// Shuffle 
 function shuffle(array) {
   array.sort(() => Math.random() - 0.5);
 }
 
-// Initialize the game board
+// Initialize the board
 function initializeBoard() {
   shuffle(cards);
   const board = document.getElementById('game-board');
