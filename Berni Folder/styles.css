@@ -16,6 +16,12 @@
     padding-top: 20%; /* maintain aspect ratio */
     position: relative; /* for inner content positioning */
     border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    font-size: smaller;
+    text-align: center; 
+    white-space: normal;
+    line-height: 1.2;
   }
   
   body {
