@@ -15,12 +15,6 @@ body{
     min-height: 100vh;
     background: maroon;
 }
-.home{
-    font-size: 15px;
-    font-weight: 200;
-    text-align: center;
-    margin-bottom: 20px;
-}
 .border {
     width: 65vmin;
     height: 70vmin;
@@ -31,7 +25,7 @@ body{
     justify-content: center;
     border-radius: 5px;
     background: #650303;
-    box-shadow: 0 20px 40px rgb(84, 5, 5);
+    box-shadow: 0 20px 40px rgb(138, 8, 8);
 }
 .container{
     width: 440px;
@@ -58,14 +52,12 @@ body{
     text-align: center;
     letter-spacing: 24px;
     margin-right: -24px;
-    margin-top: 20px;
     word-break: break-all;
     text-transform: uppercase;
 }
 
 .content .details{
     margin: 25px 0 20px;
-    text-align: center;
 }
 
 .details p{
@@ -102,7 +94,6 @@ body{
 .content .buttons{
     display: flex;
     margin-top: 20px;
-    margin-bottom: 20px;
     justify-content: space-between;
 }
 
