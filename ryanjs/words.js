@@ -56,4 +56,16 @@ let words = [
         word: "jimbo",
         hint: "aggie football coach"
     },
+    {
+        word: "elephant",
+        hint: "________ walk, for seniors"
+    },
+    {
+        word: "goodbull",
+        hint: "embracing the aggie spirit"
+    },
+    {
+        word: "sully",
+        hint: "pennies on ______, statue"
+    }
 ]
